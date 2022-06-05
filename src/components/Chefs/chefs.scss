@@ -1,0 +1,10 @@
+.section.chefs {
+  display: block;
+}
+
+.section.chefs .top-chefs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 1.5em;
+  margin-top: 3em;
+}

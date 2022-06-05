@@ -1,0 +1,48 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  width: 200px;
+  background-color: var(--background-color);
+  box-shadow: 0px 0px 0px 1000px hsla(0, 0%, 0%, 0.2),
+    3px 0 5px var(--shadow-color);
+  animation: getAnimationDuration(0.3s) slideInLeft;
+  -webkit-animation: getAnimationDuration(0.3s) slideInLeft;
+}
+
+.sidebar .sidebar-link {
+  display: block;
+  padding: 1em;
+  border-left: 0.4em solid transparent;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: var(--text-color);
+  font-weight: bold;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  animation: getAnimationDuration(0.3s) slideInLeft forwards;
+  -webkit-animation: getAnimationDuration(0.3s) slideInLeft forwards;
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+  &.active {
+    border-left-color: var(--primary-color);
+  }
+}
+
+.sidebar .sidebar-link:hover {
+  border-left-color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar .sidebar-link svg {
+  width: 1.2em;
+  margin-right: 0.5em;
+}

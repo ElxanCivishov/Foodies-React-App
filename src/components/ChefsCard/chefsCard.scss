@@ -1,0 +1,62 @@
+.section.chefs .chefs-card {
+  display: flex;
+  height: 120px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.section.chefs .chefs-card img {
+  width: 120px;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 3px 6px var(--shadow-color);
+}
+
+.section.chefs .chefs-card-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+
+.section.chefs .chefs-card-name {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.section.chefs .chefs-recipe-count,
+.chefs-kitchen {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.section.chefs .chefs-icons {
+  font-size: 1em;
+}
+
+.section.chefs .chefs-icons svg {
+  margin-right: 0.5em;
+  &:nth-child(1) {
+    color: #0063f7;
+  }
+  &:nth-child(2) {
+    color: #13b4ff;
+  }
+  &:nth-child(3) {
+    color: #ff0056;
+  }
+}

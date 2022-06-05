@@ -1,0 +1,33 @@
+@function getAnimationDuration($duration: number) {
+  @return calc($duration * var(--animation-speed));
+}
+
+@import "../components/Navbar/navbar.scss";
+
+@import "../components/Sidebar/sidebar.scss";
+
+@import "./animations.scss";
+
+@import "../components/MainHeaderSection/mainHeaderSection.scss";
+
+@import "../components/CustomImage/customImage.scss";
+
+@import "../components/Improve/improveSkills.scss";
+
+@import "../components/Quote/quote.scss";
+
+@import "../components/Chefs/chefs.scss";
+
+@import "../components/ChefsCard/chefsCard.scss";
+
+@import "../components/Footer/footer.scss";
+
+@import "../components//PreviousSearches/previousSearches.scss";
+
+@import "../components/RecipesCard/recipesCard.scss";
+
+@import "../style/global.scss";
+
+@import "../style/mediaQuery.scss";
+
+@import "../style/pages.scss";
